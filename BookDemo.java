@@ -26,7 +26,7 @@ public class BookDemo {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter number of books: ");
-        int n = Integer.parseInt(sc.nextLine());  // ✅ Read as full line then parse
+        int n = Integer.parseInt(sc.nextLine());  
 
         Book[] books = new Book[n];
 
@@ -40,10 +40,10 @@ public class BookDemo {
             String author = sc.nextLine();
 
             System.out.print("Price: ");
-            double price = Double.parseDouble(sc.nextLine()); // ✅ safer input
+            double price = Double.parseDouble(sc.nextLine()); 
 
             System.out.print("Number of pages: ");
-            int pages = Integer.parseInt(sc.nextLine()); // ✅ safer input
+            int pages = Integer.parseInt(sc.nextLine()); 
 
             books[i] = new Book(name, author, price, pages);
         }
@@ -56,6 +56,7 @@ public class BookDemo {
         sc.close();
     }
 }
+
 
 
 
